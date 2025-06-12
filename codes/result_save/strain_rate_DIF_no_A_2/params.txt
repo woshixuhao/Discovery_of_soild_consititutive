@@ -1,0 +1,15 @@
+size_pop: 300
+generation_num: 150
+distinction_epoch: 5
+max_edge_num: 30
+max_variable_num: 7
+use_parallel_computing: True
+seek_best_initial: True
+epi: 0.2
+max_unconstant: 2
+use_var: x
+
+[0.0004997511891980111, 0.0005010971066848913, 0.0005025044726867631, 0.0007761332661125757, 0.0007793841666939628]
+[(((C3*x + 1)**(-2))**C1)**0.5, (((C3*x - 1)**2)**C1)**(-0.5), ((C3*x + 1)**2)**(0.5*C0), exp(1/(C4*exp(C6/x**0.5) + 1)), (C2*x**C3 + 1)**2]
+best graph: {'nodes': ['exp', 'exp', 'exp', 'add', 'x', '1'], 'edges': [[0, 1], [1, 2], [2, 3], [3, 4], [3, 5]], 'edge_attr': [0.5, -100000000.0, -2, -100000000.0, 1]}
+

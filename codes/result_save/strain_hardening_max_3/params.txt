@@ -1,0 +1,10 @@
+size_pop: 300
+generation_num: 150
+distinction_epoch: 5
+max_edge_num: 30
+max_variable_num: 7
+use_parallel_computing: True
+seek_best_initial: True
+epi: 0.2
+max_unconstant: 3
+use_var: x
