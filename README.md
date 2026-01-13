@@ -1,5 +1,5 @@
 # Discovery_of_soild_consititutive
-The data and codes for the paper "Graphic-symbolic regression for constitutive law discovery in solids: towards generalizable and interpretable data-driven modeling"
+The data and codes for the paper "Beyond empirical models: Discovering constitutive laws in solids with graph-based equation discovery"
 
 # Environments
 python==3.12.4   
@@ -18,6 +18,7 @@ torch-geometric==2.6.1
 * [data_DIF]: data for DIF constitutive model, including 40 different materials under varying strain rates were compiled from 18 published studies.  
   -In each data, the strain rate and DIF is recorded  
 * [data_strain_stress]: data for strain hardening constitutive model. In each data, the true plastic strain and true plastic stress is recorded.
+* [data_rubber]: data for filled rubber. In each data, the nominal strain and nominal stress is recorded.  
 * [saved_data_hardening_strain_rate]: data for combined DIF and strain hardening for the discovery of integrated model.
   
 
@@ -31,6 +32,7 @@ torch-geometric==2.6.1
    -model=='Valid discovered': Show the optimization process of graphic-symbolic regression with the top-5 equations in each epoch.  
 3. [Discovery of integrated constitutive model] Run the Discovery_of_hardening_strain_rate.py to test the integrated consititutive model.  
    -model=='Valid': use the integrated model or modified model to predict the strain-stress curve under different strain rates.
+4. [Discovery of rubber] Run the Discovery_of_rubber.py    
 
 
 # Expected outputs
